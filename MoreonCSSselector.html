@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .boxes:first-child{
+            background-color: aqua;
+        } */
+        /* .boxes::first-line{
+            color:blueviolet;
+        } */
+        .box::before{
+            content: "this is first";
+            color:purple;
+        }
+        .box::after{
+            content: "this is last";
+            color:rgb(210, 85, 17);
+        }
+        .boxes::selection{
+            color:blueviolet;
+            background-color:rgb(238, 229, 229);
+        }
+        
+        input::placeholder{
+            color:gray;
+            font-style: italic ;
+        }
+        .boxes::first-letter{
+            font-size:xx-large;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam assumenda voluptatibus rem sint error impedit eos dolorum molestiae praesentium alias enim laudantium architecto quas iste, obcaecati unde similique aliquid placeat. Molestiae facilis voluptate necessitatibus laboriosam cumque doloremque qui voluptates suscipit natus expedita harum nam ipsum quia provident voluptas delectus sed, quibusdam aliquid reprehenderit tempora a culpa doloribus neque? Voluptas praesentium, ullam excepturi odio non in quae modi blanditiis veritatis tempora odit, ducimus assumenda fugiat ipsam obcaecati, magni animi nam et recusandae. Blanditiis adipisci dolore at libero error a qui asperiores aut maiores, sit, exercitationem, vitae corporis eaque veritatis hic culpa?</div>
+        <div class="boxes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, pariatur.</div>
+        <div class="boxes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis assumenda placeat maiores id excepturi, facere libero commodi reprehenderit tenetur sint totam, porro quaerat, cumque dolorem.</div>
+        <input type="text" placeholder="type your name here">
+    </div>
+</body>
+</html>

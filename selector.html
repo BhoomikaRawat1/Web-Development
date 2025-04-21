@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: rgb(255, 153, 127);
+    }
+    /* class selector */
+    .pink{
+        background-color: pink;
+    }
+    /* id selector */
+    #bisque{
+        background-color: bisque;
+     }
+    /* child selector */ */
+    div >p{
+        background-color: rgba(12, 236, 117, 0.895);
+    }
+    /* descendant selector */
+    div p{
+        background-color: rgb(89, 43, 226);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* pseudo selector */
+    a:visited{
+        color: green;
+    }
+    a:link{
+        color:red
+    }
+    a:active{
+        background-color: pink;
+    }
+    a:hover{
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div> 
+        hey! i learn about selectors
+    </div>
+    <div class="pink">
+        hey! i am class selector
+    </div>
+    <div class="green">
+        hey! i am child selector
+        <article>
+            <p> i am para inside article of div class  </p>
+            <p> i am para inside article of div class  </p>
+        </article>
+    </div>
+    <div id="bisque">
+        hey! i am id selector
+    </div>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.yahoo">Yahoo</a>
+</body>
+</html>
