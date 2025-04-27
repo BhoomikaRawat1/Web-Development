@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .header {
+            font-size: xx-large;
+            font-weight: bold;
+            padding-right: 400px;
+            /* padding-left: 120px; */
+         
+           
+        }
+
+        .subtext {
+            font-size: medium;
+            padding-top: 1px;
+            padding-left: 40px;
+          
+            padding-right: 350px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+           width:100%;
+           /* height:70px; */
+        }
+
+        .image img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            margin-left: 95px;
+
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: white;
+           height:80px;
+           padding: 20px;
+           
+           
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            padding: 4px 10px;
+            font-size: larger;
+            width:100%;
+        }
+        li:hover{
+           color: rgb(128, 16, 232);
+            width:auto;
+             height:20px; 
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="image">
+            <img src="UElogo.png" alt="UE_logo">
+        </div>
+        <div class="brand">
+            <div class="header">UltraEdit</div>
+            <div class="subtext">by Embarcadero</div>
+        </div>
+
+        <ul>
+            <li>Products </li>
+            <li>For business</li>
+            <li>Resources</li>
+            <li>Academic licensing</li>
+            <li>Our company</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
