@@ -11,14 +11,14 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            background-color: black;
+            background-color: rgb(255, 254, 254);
         }
 
         .header {
-            font-size: xx-large;
+            font-size: large;
             font-weight: bold;
+            padding-top: 12px;
             padding-right: 400px;
             /* padding-left: 120px; */
          
@@ -36,15 +36,16 @@
         .brand {
             display: flex;
             flex-direction: column;
-           width:100%;
+         
            /* height:70px; */
         }
 
         .image img {
-            width: 40px;
-            height: 40px;
+            width: 55px;
+            height: 55px;
             margin-right: 15px;
             margin-left: 95px;
+            padding-top: 8px;
 
         }
 
@@ -52,7 +53,7 @@
         nav {
             display: flex;
             justify-content: space-between;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             padding: 5px;
             background-color: white;
            height:80px;
@@ -65,13 +66,15 @@
         ul {
             list-style: none;
             display: flex;
-            gap: 25px;
-            padding: 4px 10px;
+            gap: 40px;
+            padding: 15px 10px;
             font-size: larger;
             width:100%;
+            color: rgb(69, 66, 66);
+            padding-left: 27px;
         }
         li:hover{
-           color: rgb(128, 16, 232);
+           color: rgb(136, 134, 138);
             width:auto;
              height:20px; 
         }
@@ -84,7 +87,7 @@
             <img src="UElogo.png" alt="UE_logo">
         </div>
         <div class="brand">
-            <div class="header">UltraEdit</div>
+            <div class="header"><h2>UltraEdit</h2></div>
             <div class="subtext">by Embarcadero</div>
         </div>
 
